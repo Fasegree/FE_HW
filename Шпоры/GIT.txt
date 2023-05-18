@@ -1,0 +1,28 @@
+PS C:\Users\sergs\OneDrive\Desktop\1> git config --local user.name "Serg"
+PS C:\Users\sergs\OneDrive\Desktop\1> git config --local user.email serega1016@ukr.net
+PS C:\Users\sergs\OneDrive\Desktop\1> git status
+
+git config --local user.name "Serg"
+git config --local user.email serega1016@ukr.net
+git add -A
+
+и 3 команді с Github
+
+git remote add origin https://github.com/Fasegree/FE3.git
+>> git branch -M main
+>> git push -u origin main
+
+
+
+
+
+
+
+git init /*init proect*/
+ls -la
+git status
+git add . /*in Staging all files und directory*/ /* git add project2/ */
+git commit -m "Comment"
+git pull origin project2
+git branch -M main
+git push -u origin main

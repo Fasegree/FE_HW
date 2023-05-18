@@ -1,0 +1,5 @@
+https://doka.guide/
+https://developer.mozilla.org/ru/docs/Web/HTML
+http://htmlbook.ru/
+https://www.w3schools.com/html
+https://ru.bem.info/methodology/ НАЗВАНИЯ КЛАССОВ
