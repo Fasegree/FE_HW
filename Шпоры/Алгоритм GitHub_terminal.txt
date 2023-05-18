@@ -1,0 +1,27 @@
+алгоритм сохранения файлов на GitHub 
+ 
+1 git remote set-url origin https://github.com/<username>/<name_project>.git 
+      1.1 error: remote origin already exists.
+      1.2 git remote remove origin
+	  /*преходим к пункту 1, 2, 3 и т.д*/
+
+2 git init
+
+3 Сделать изменения в добавляемой папке/файле 
+4 git add <directory>/    Например, project1/ или файл index.html
+5 git status
+6 /*проверить, что директория/файл отмечены зелёным. Если нет, вернуться к пункту 3*/
+7 git commit -m "<commentar>"
+8 git branch -M main
+9 git push -u origin main
+
+1. Are you sure you want to continue connecting (yes/no/[fingerprint])? yes
+
+2. error: failed to push some refs to 'https://github.com/Fasegree/test.git'
+
+ git pull origin main --allow-unrelated-histories
+ 
+ /*Команда git pull origin main --allow-unrelated-histories позволяет выполнить слияние веток в репозитории Git, даже если они не имеют общей истории изменений. Флаг --allow-unrelated-histories отключает проверку на связанность историй при слиянии.*/
+перейти к пункту 3
+
+https://drive.google.com/file/d/1zZd70N0KBIRdtYu6yUuxt84zuPOuHHsq/view?usp=sharing

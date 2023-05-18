@@ -2,8 +2,8 @@ PS C:\Users\sergs\OneDrive\Desktop\1> git config --local user.name "Serg"
 PS C:\Users\sergs\OneDrive\Desktop\1> git config --local user.email serega1016@ukr.net
 PS C:\Users\sergs\OneDrive\Desktop\1> git status
 
-git config --local user.name "Serg"
-git config --local user.email serega1016@ukr.net
+git config --local user.name "Fasegree"
+git config --local user.email fasegree@gmail.com
 git add -A
 
 и 3 команді с Github
@@ -11,6 +11,12 @@ git add -A
 git remote add origin https://github.com/Fasegree/FE3.git
 >> git branch -M main
 >> git push -u origin main
+
+/*
+git remote add origin git@github.com:Fasegree/test.git
+git branch -M main
+git push -u origin main
+*/
 
 
 
@@ -23,6 +29,35 @@ ls -la
 git status
 git add . /*in Staging all files und directory*/ /* git add project2/ */
 git commit -m "Comment"
-git pull origin project2
+/*git pull origin project2 */
+git remote add origin https://github.com/Fasegree/FE3.git
 git branch -M main
 git push -u origin main
+
+/*
+git remote add origin git@github.com:Fasegree/test.git
+git branch -M main
+git push -u origin main
+*/
+
+
+
+Если вы получаете ошибку "non-fast-forward" при выполнении команды git push -u origin main, это означает, что ваш локальный репозиторий отстает от удаленного репозитория на GitHub. Вероятно, в удаленном репозитории были внесены изменения после вашего последнего обновления.
+
+Чтобы решить эту проблему, выполните команду git pull origin main, чтобы получить последние изменения из удаленного репозитория и объединить их с вашими локальными изменениями. Если возникнут конфликты слияния, вам придется их разрешить вручную.
+
+После успешного выполнения git pull ваши локальные изменения будут объединены с изменениями из удаленного репозитория. Затем вы можете снова выполнить git push -u origin main, чтобы отправить свои изменения на GitHub.
+
+
+Ошибка "fatal: refusing to merge unrelated histories" происходит, когда Git обнаруживает, что история коммитов в вашей локальной ветке и ветке, на которую вы пытаетесь выполнить git pull, различаются и не имеют общего начала.
+
+Возможно, у вас есть две независимые ветки с разными историями коммитов, и Git не знает, как объединить их автоматически. Это может произойти, например, когда вы создаете новый репозиторий на GitHub и затем клонируете его на локальную машину.
+
+Если вы уверены, что хотите объединить истории коммитов и выполнить слияние независимых веток, вы можете использовать флаг --allow-unrelated-histories:
+
+css
+Copy code
+git pull origin main --allow-unrelated-histories
+Эта команда позволяет Git объединить две ветки с несвязанными историями коммитов. После этого вы сможете продолжить слияние и решить возможные конфликты слияния вручную.
+
+Однако, прежде чем выполнить это действие, важно убедиться, что объединение историй коммитов является желаемым решением. В некоторых случаях, если истории коммитов совершенно независимы, объединение может привести к нежелательным результатам.
