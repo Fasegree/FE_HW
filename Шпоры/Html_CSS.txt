@@ -3,3 +3,6 @@ https://developer.mozilla.org/ru/docs/Web/HTML
 http://htmlbook.ru/
 https://www.w3schools.com/html
 https://ru.bem.info/methodology/ НАЗВАНИЯ КЛАССОВ
+
+https://unsplash.com/ изображения без авторских прав
+https://icons8.com/ icon
