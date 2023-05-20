@@ -1,0 +1,30 @@
+h1 {
+	font-size: 32px;
+	color: #0000ff;
+	text-align: center;
+}
+
+.cart {
+	display: flex;
+	flex-shrink: initial;
+	flex-wrap: nowrap;
+}
+.post-1 {
+	margin-bottom: 50px;
+	background-color: #b9f0b9d4;
+	padding: 50px;
+	border: 3px solid #e0e757d4;
+	border-radius: 20px;
+}
+h3 {
+	font-size: 28px;
+	margin-bottom: 30px;
+}
+p{
+	font-size: 22px;
+}
+img {
+	
+	width: 500px;
+	
+}

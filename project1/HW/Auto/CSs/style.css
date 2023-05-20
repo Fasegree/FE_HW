@@ -3,6 +3,7 @@
 	align-items: center;
 	justify-content: space-between;
 	background-color: #0000ff;
+
 }
 div menu{
 	padding: 0px;
@@ -47,14 +48,17 @@ h1 {
 	text-align: center;
 }
 
-div {
+.cart {
+	display: flex;
+	flex-shrink: initial;
+	flex-wrap: nowrap;
+}
+.post-1 {
+	margin-bottom: 50px;
 	background-color: #b9f0b9d4;
 	padding: 50px;
 	border: 3px solid #e0e757d4;
 	border-radius: 20px;
-}
-.post-1 {
-	margin-bottom: 50px;
 }
 h3 {
 	font-size: 28px;
