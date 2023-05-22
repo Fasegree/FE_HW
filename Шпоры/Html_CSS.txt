@@ -3,6 +3,15 @@ https://developer.mozilla.org/ru/docs/Web/HTML
 http://htmlbook.ru/
 https://www.w3schools.com/html
 https://ru.bem.info/methodology/ НАЗВАНИЯ КЛАССОВ
+https://flexboxfroggy.com/#ru Flex-game
 
 https://unsplash.com/ изображения без авторских прав
 https://icons8.com/ icon
+
+ШПАРГАЛКА по FE. 
+Сохраните себе - много папок с разными темами по FE. После сегодняшнего урока также будет запись самого важного.
+https://github.com/Ray3en/tel-ran-consultations-fe
+
+GitHub подключение SSH ключей
+https://western-appeal-39b.notion.site/Linux-Consultation-Feb-11-2023-9444dd868feb44b98acdab4272632a1d
+

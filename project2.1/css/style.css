@@ -1,0 +1,18 @@
+ *{/*  /*Сброс стилей */
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+} */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap');
+
+
+p{
+	font-family: 'Roboto Mono', monospace;
+
+}
+
+.square {
+	width: 400px;
+	aspect-ratio: 1; /*пропорции*/
+	border: 10px solid #0000ff;
+}

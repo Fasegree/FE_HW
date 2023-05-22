@@ -23,8 +23,8 @@
 5 git status
 6 /*проверить, что директория/файл отмечены зелёным. Если нет, вернуться к пункту 3*/
 7 git commit -m "<commentar>"
-8 git branch -M main
-9 git push -u origin main
+git branch -M main
+git push -u origin main
 
 1. Are you sure you want to continue connecting (yes/no/[fingerprint])? yes
 

@@ -1,18 +1,59 @@
- *{/*  /*Сброс стилей */
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
-} */
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap');
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box; 
+/*высчитываются блоки не учитывая padding.200*200px  Итоговая высота и ширина блока сохраняются*/
+}
+ .item {
 
+	width: 200px;
+	height: 200px;
+	background-color: #7f1a1a;
+	/* padding: 50px; */
+	margin: 10px;
 
-p{
-	font-family: 'Roboto Mono', monospace;
 
 }
+.item1 {
+	 
+	height: 200px;
+	background-color: black;
+	margin: 10px;
+	order: -1;
+}
+main {
+	display: flex;
+	/* flex-wrap: wrap; */
+	height: 100vh;
+	background-color: #faf;
 
-.square {
-	width: 400px;
-	aspect-ratio: 1; /*пропорции*/
-	border: 10px solid #0000ff;
+}
+/* p {
+	background-color: aqua;
+	
+} */
+
+/* .item2 {
+	background-color: rgb(180, 108, 1);
+	margin: 0px 0px 0px 200px;
+}
+.item3 {
+	background-color: rgb(111, 7, 129);
+	margin: 0px 0px 0px 400px;
+	/* margin-left: 400px; */
+} */
+
+
+.container {
+  display: flex;
+  flex-wrap: nowrap; /* Отключает перенос элементов на следующую строку */
+}
+
+.item5 {
+  flex: 1; /* Распределение доступного пространства между элементами */
+  min-width: 0; /* Предотвращает переполнение элементов при уменьшении окна */
+  width: 100px;
+	height: 100px; /* Высота квадратов */
+  background-color: #7f1a1a;
+  margin: 5px;
 }

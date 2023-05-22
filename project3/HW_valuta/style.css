@@ -1,0 +1,23 @@
+* {
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+h2, table {
+	margin: 30px;
+}
+ul {
+	margin-left: 80px;
+}
+table {
+	border-collapse: collapse;
+	border: 2px solid #000;
+}
+td, th {
+	padding: 5px;
+	border: 1px solid #000;
+}
+img {
+	width: 50px;
+	padding: 2px;
+}
