@@ -12,7 +12,7 @@ function App() {
   const urlProducts = 'https://fakestoreapi.com/products'
 
   function getLS(){
-    JSON.parse(localStorage.getItem('products'))
+   return JSON.parse(localStorage.getItem('products'))
   }
   function setLS(key,array){
     localStorage.setItem(key, JSON.stringify(array))
