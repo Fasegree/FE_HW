@@ -1,0 +1,25 @@
+.wrapper {
+	margin: 0px auto;
+	width: 80%;
+	margin-top: 55px;
+	min-width: 723px;
+	border: 10px solid #95B0D8;
+	border-radius: 28px;
+}
+.tableAttempts {
+	border-radius: 10px;
+	margin: 0px auto;
+	width: 100%;
+	border: 1px solid #000;
+	background-color: #c8c7fc;
+}
+th{
+	background-color: #bababa;
+	padding: 10px;
+	border: 1px solid #000;
+}
+td{
+	padding: 10px;
+	border: 1px solid #000;
+	background-color: #ffffff;
+}

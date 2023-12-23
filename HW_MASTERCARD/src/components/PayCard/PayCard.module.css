@@ -1,0 +1,210 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+.formContain{
+	position: relative;
+}
+.cards{
+	position: relative;
+margin: 30px;
+
+}
+.frontCard{
+	position: absolute;
+	z-index: 4;
+}
+.frontCardContent{
+	/* display: none; */
+	/* position: absolute; */
+	width: 388px;
+	height: 239px;
+	padding-top: 24px;
+	padding-left: 28px;
+	padding-right: 36px;
+	padding-bottom: 24px;
+	border-radius: 10px;
+	background-color: #ECECEC;
+	box-shadow: 0px 4px 4px 0px #00000040;
+
+	/* animation: cardsChange; */
+}
+
+.frontCardTop{
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	gap: 28px;
+}
+.frontCard input{
+
+	border: 2px solid #ADADAD;
+	height: 42px;
+	padding: 10px 10px;
+
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 19px;
+	cursor: pointer;
+	text-transform: uppercase;
+}
+.isError{
+	border-color: red !important;
+}
+.isError:focus{
+	outline: 1px solid rgb(248, 39, 39);
+
+}
+.errorHolder{
+	position: absolute;
+	color: red;
+	right: 0;
+	top: 40px;
+}
+.errorNumber{
+	position: absolute;
+	color: red;
+	right: 0;
+	top: 110px;
+}
+
+.frontCard .valid{
+padding-top: 11px;
+padding-bottom: 7px;
+text-transform: uppercase;
+font-weight: 400;
+font-size: 15px;
+line-height: 18px;
+}
+
+.frontCardBottom{
+	position: relative;
+	display: flex;
+	flex-direction: row;
+}
+.errorMonth{
+	position: absolute;
+	color: red;
+	right: 253px;
+	top: 40px;
+}
+.errorYear{
+	position: absolute;
+	color: red;
+	right: 140px;
+	top: 40px;
+}
+.month, .year{
+	width: 73px;
+}
+
+.frontCard span{
+	font-size: 30px;
+	
+margin: 0 16px;
+}
+.frontCard img{
+padding-left: 17px;
+}
+
+.backCard{
+position: absolute;
+margin-top: 35px;
+margin-left: 112px;
+z-index: 2;
+
+}
+.backCardContent{
+	position: relative;
+	width: 388px;
+	height: 239px;
+	padding-top: 30px;
+	border-radius: 10px;
+	background-color: #ECECEC;
+	box-shadow: 0px 4px 4px 0px #00000040;
+	perspective: 100px;
+	transform: rotateY(05deg);
+}
+.backCard .magnetStr{
+
+	height: 50px;
+	background-color: #979797;
+}
+.backCardContent > input{
+position: absolute;
+	right: 22px;
+	bottom: 35px;
+	width: 73px;
+	height: 42px;
+	/* padding-left: 8px; */
+
+
+	border: 2px solid #ADADAD;
+
+	padding: 10px 10px;
+
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 19px;
+	cursor: pointer;
+
+}
+.errorCVC{
+	position: absolute;
+	color: red;
+	right: 25px;
+	bottom: 18px;
+}
+
+@keyframes changeCard {
+  0% {
+    left: 0px;
+    transform: scale(1);
+	
+  }
+
+  50% {
+    left: 250px;
+    transform: scale(0.85);
+		
+  }
+
+  100% {
+    left: 100px;
+    z-index: 4;
+    transform: scale(1.1);
+  }
+}
+.backCard:focus-within {
+	animation: changeCard .5s forwards;
+	animation-timing-function: ease-in-out;
+}
+.logo{
+	position: absolute;
+	top: 83px;
+	left: 600px;
+	z-index: 0;
+}
+
+.sendBtn {
+	position: relative;
+	padding:  8px 60px;
+	color: #fff;
+	background-color: #95B0D8;
+	border-radius: 11px;
+	font-weight: 400;
+	font-size: 25px;
+	line-height: 30px;
+	border: none;
+	margin-top: 350px;
+	left: 0;
+	left: 30px;
+	cursor: pointer;
+}
+.sendBtn:hover {
+	background-color: #859dc0;
+	top: 3px;
+	left: 33px;
+	color: #cfcccc;
+}
